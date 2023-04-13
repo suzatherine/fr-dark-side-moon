@@ -520,7 +520,7 @@ You have two options:
 <<set $showForwards to true>>
 <<set $showBackwards to false>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateDirectionsMap(53.402712203909815, -2.9774930730282687,53.402712203909815, -2.9774930730282687)>>
 
 <div id="audio"></div>
 /* <<include "header">> */
@@ -581,7 +581,7 @@ You have two options:
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateDirectionsMap(53.402712203909815, -2.9774930730282687,53.402712203909815, -2.9774930730282687)>>
 <div id="audio"></div>
 <<include "header">>
 <div class="comp-warning">Best to experience on a phone</div>
@@ -778,7 +778,7 @@ Now there are the parades of an alien country
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -836,7 +836,7 @@ Now there are the parades of an alien country
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to true>>
 /* Everyman to 1931  */
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
 <<include "headerstory">>
 <main class="story">
 <audio id="audio" >
@@ -911,7 +911,7 @@ But despite how war has marked our cities, our greatest treasure, our people, pe
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
 /* Church  */
-<<set $map = setup.generateDirectionsMap(53.40143323565547, -2.9706816152244295, 53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.40449226592464, -2.9837506693977907,53.40449226592464, -2.9837506693977907)>>
 <main class="end">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
