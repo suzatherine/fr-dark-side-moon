@@ -389,30 +389,6 @@ main.end {
   background-image: url("./../assets/img/le15.jpeg");
 }
 
-.ar-imgs-container.two {
-  background-image: url("./../assets/img/le17.jpg");
-}
-
-.ar-imgs-container.three {
-  background-image: url("./../assets/img/le16.jpeg");
-}
-
-.ar-imgs-container.four {
-  background-image: url("./../assets/img/le14.jpeg");
-}
-
-.ar-imgs-container.five {
-  background-image: url("./../assets/img/le13.jpeg");
-}
-
-.ar-imgs-container.six {
-  background-image: url("./../assets/img/le11.jpg");
-}
-
-.ar-imgs-container.seven {
-  background-image: url("./../assets/img/le12.jpg");
-}
-
 .ar-img-wrapper,
 .hidden-img-wrapper {
   height: 50vh;
