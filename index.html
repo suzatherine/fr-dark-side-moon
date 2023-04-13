@@ -677,7 +677,7 @@ You have two options:
 &lt;/main&gt;
 &lt;&lt;include &quot;footer&quot;&gt;&gt; */</tw-passagedata><tw-passagedata pid="14" name="moon" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;instnar2&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;moon&quot;&gt;&gt;
-&lt;&lt;set $nextpass to &quot;instnar4&quot;&gt;&gt;
+&lt;&lt;set $nextpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $transcript to false&gt;&gt;
 &lt;&lt;set $playToggle to false&gt;&gt;
 &lt;&lt;set $captionToggle to false&gt;&gt;
@@ -779,7 +779,36 @@ To be proud in song and dance
 To organize a holiday...
 [...]
 Here my great-grandfather lived, his gardens were here,
-Now there are the parades of an alien country</tw-passagedata><tw-passagedata pid="16" name="instnar4" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;moon&quot;&gt;&gt;
+Now there are the parades of an alien country</tw-passagedata><tw-passagedata pid="16" name="instnar3" tags="nobr" position="725,225" size="100,100">&lt;&lt;set $prevpass to &quot;moon&quot;&gt;&gt;
+&lt;&lt;set $passage to &quot;instnar3&quot;&gt;&gt;
+&lt;&lt;set $nextpass to &quot;instnar4&quot;&gt;&gt;
+&lt;&lt;set $showMap to true&gt;&gt;
+&lt;&lt;set $showAudio to false&gt;&gt;
+&lt;&lt;set $showReplay to true&gt;&gt;
+&lt;&lt;set $showBackwards to true&gt;&gt;
+&lt;&lt;set $showForwards to true&gt;&gt;
+&lt;&lt;set $showCaptionsIcon to false&gt;&gt;
+&lt;&lt;set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)&gt;&gt;
+&lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
+
+&lt;main class=&quot;instructions&quot;&gt;
+&lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
+
+  &lt;&lt;if $openOrClosed is &quot;open&quot;&gt;&gt;
+  &lt;p&gt;Before you leave, take a chance to browse the many activist books from around the world.  &lt;/p&gt;
+  &lt;p&gt;Can you find the section on Ukraine? &lt;/p&gt;
+  &lt;&lt;button &quot;NEXT&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+
+  &lt;&lt;if $openOrClosed is &quot;closed&quot;&gt;&gt;
+  &lt;p&gt;Don’t forget to come back to News From Nowhere when it’s open &lt;/p&gt;
+  &lt;p&gt;You can browse the many activist books from around the world, including Ukraine &lt;/p&gt;
+    &lt;&lt;button &quot;NEXT&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;/main&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="instnar4" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar4&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;journey1&quot;&gt;&gt;
 &lt;&lt;set $showMap to true&gt;&gt;
@@ -800,7 +829,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 
   &lt;&lt;button &quot;LET&#39;S GO&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/main&gt;
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="journey1" tags="nobr" position="850,225" size="100,100">&lt;&lt;set $prevpass to &quot;instnar4&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="journey1" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;instnar4&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;journey1&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;street2&quot;&gt;&gt;
 &lt;&lt;set $showMap to true&gt;&gt;
@@ -811,7 +840,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
 /* &lt;&lt;set $showAudio to true&gt;&gt; */
 /* Everyman to 1931  */
-&lt;&lt;set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.40143323565547, -2.9706816152244295)&gt;&gt;
+&lt;&lt;set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)&gt;&gt;
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
@@ -821,7 +850,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="street2" tags="nobr" position="975,225" size="100,100">&lt;&lt;set $prevpass to &quot;journey1&quot;&gt;&gt;
+&lt;&lt;include &quot;footer&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="street2" tags="nobr" position="1100,225" size="100,100">&lt;&lt;set $prevpass to &quot;journey1&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;street2&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $showMap to true&gt;&gt;
@@ -835,7 +864,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;&lt;set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)&gt;&gt;
 &lt;&lt;include &quot;headerstory&quot;&gt;&gt;
 &lt;main class=&quot;story&quot;&gt;
-&lt;audio id=&quot;audio&quot; &gt;
+&lt;audio id=&quot;audio&quot; autoplay&gt;
   &lt;source src=&quot;https://www.dropbox.com/s/vobz1rqr6u0pcbf/04.%20THE%20STREETS%20PART%20TWO%20V1.mp3?raw=1&quot;&gt;
   &lt;track kind=&quot;captions&quot; srclang=&quot;en&quot; label=&quot;English captions&quot; id=&quot;captrack&quot; default&gt;
 &lt;/audio&gt;
@@ -861,7 +890,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;&lt;include &quot;footerstory&quot;&gt;&gt;
 &lt;&lt;done&gt;&gt;
   &lt;&lt;set $addC to setup.addCaptions(&quot;street2&quot;)&gt;&gt;
-&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="street2transcript" tags="" position="1100,225" size="100,100">&lt;h2&gt;Transcript&lt;/h2&gt;
+&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="street2transcript" tags="" position="1225,225" size="100,100">&lt;h2&gt;Transcript&lt;/h2&gt;
 
 Russians target our infrastructure creating disasters.
 Imagine the street you are walking on now, without any electricity?
@@ -883,7 +912,7 @@ NARRATOR:
 By the middle of Spring, Lilacs start to blossom, and it’s impossible in the darkness to understand, if you are looking at an outpost covered with white netting or Lilac bushes blooming. If it is something beautiful or something connected to war. You can only tell if you smell it.
 Even though war is still ongoing, sandbags split as grass and flowers begin to grow out of them.
 Everything becomes mixed, absurd things with awful things all in one story.
-But despite how war has marked our cities, our greatest treasure, our people, persist. And musicians like cellist Karachevtsev Denys, go out on the streets to play amongst the rubble of the buildings...</tw-passagedata><tw-passagedata pid="20" name="end" tags="nobr" position="1225,225" size="100,100">&lt;&lt;set $prevpass to &quot;street2&quot;&gt;&gt;
+But despite how war has marked our cities, our greatest treasure, our people, persist. And musicians like cellist Karachevtsev Denys, go out on the streets to play amongst the rubble of the buildings...</tw-passagedata><tw-passagedata pid="21" name="end" tags="nobr" position="100,350" size="100,100">&lt;&lt;set $prevpass to &quot;street2&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;

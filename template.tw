@@ -656,7 +656,7 @@ You have two options:
 :: moon [nobr]  {"position":"700,175","size":"100,100"}
 <<set $prevpass to "instnar2">>
 <<set $passage to "moon">>
-<<set $nextpass to "instnar4">>
+<<set $nextpass to "instnar3">>
 <<set $transcript to false>>
 <<set $playToggle to false>>
 <<set $captionToggle to false>>
@@ -766,10 +766,40 @@ To organize a holiday...
 Here my great-grandfather lived, his gardens were here,
 Now there are the parades of an alien country
 
+:: instnar3 [nobr]
+<<set $prevpass to "moon">>
+<<set $passage to "instnar3">>
+<<set $nextpass to "instnar4">>
+<<set $showMap to true>>
+<<set $showAudio to false>>
+<<set $showReplay to true>>
+<<set $showBackwards to true>>
+<<set $showForwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
+<div id="audio"></div>
 
+<main class="instructions">
+<div id="map" class="hide">$map</div>
+
+  <<if $openOrClosed is "open">>
+  <p>Before you leave, take a chance to browse the many activist books from around the world.  </p>
+  <p>Can you find the section on Ukraine? </p>
+  <<button "NEXT">><<goto $nextpass>><</button>>
+<</if>>
+
+
+  <<if $openOrClosed is "closed">>
+  <p>Don’t forget to come back to News From Nowhere when it’s open </p>
+  <p>You can browse the many activist books from around the world, including Ukraine </p>
+    <<button "NEXT">><<goto $nextpass>><</button>>
+<</if>>
+
+</main>
+<<include "footer">>
 
 :: instnar4 [nobr]
-<<set $prevpass to "moon">>
+<<set $prevpass to "instnar3">>
 <<set $passage to "instnar4">>
 <<set $nextpass to "journey1">>
 <<set $showMap to true>>
@@ -807,7 +837,7 @@ Now there are the parades of an alien country
 <<set $showCaptionsIcon to false>>
 /* <<set $showAudio to true>> */
 /* Everyman to 1931  */
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
 <main class="instructions">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
@@ -839,7 +869,7 @@ Now there are the parades of an alien country
 <<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
 <<include "headerstory">>
 <main class="story">
-<audio id="audio" >
+<audio id="audio" autoplay>
   <source src="https://www.dropbox.com/s/vobz1rqr6u0pcbf/04.%20THE%20STREETS%20PART%20TWO%20V1.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
