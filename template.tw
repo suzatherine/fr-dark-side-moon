@@ -216,7 +216,7 @@ setup.backThirty = () => {
 
 :: headerstory [nobr]
 
-<header>
+<header class="story">
 <<if $showBackwards is true>>
   <div class="nav-wrapper">
     <div class="nav-item">
@@ -229,7 +229,10 @@ setup.backThirty = () => {
 <<if $showMap is true>>
     <div class="nav-wrapper">
       <div class="nav-item">
-    <<link [img[assets/img/map.png]]>><<toggleclass "#map" "hide">><</link>>
+    <<link [img[assets/img/map.png]]>>
+    <<toggleclass "#map" "hide">>
+    <<toggleclass "#poster" "hide">>
+    <</link>>
     </div>
   </div>
   <</if>>
@@ -242,7 +245,7 @@ setup.backThirty = () => {
   
   </div>
      <</if>>
-</header>
+</header> 
 
 
 :: footer [nobr]{"position":"100,375","size":"100,100"}
@@ -670,7 +673,7 @@ You have two options:
   <source src="https://www.dropbox.com/s/9zjl6m4tel6sumd/04.%20The%20Dark%20Side%20of%20the%20Moon%20V1.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
-<div class="poster-wrapper" id="posterWrapper">
+<div class="poster-wrapper" id="posterWrapper poster">
    <img class="poster" src="./../assets/img/moon.jpeg"/>
  </div>
   
@@ -869,15 +872,15 @@ Now there are the parades of an alien country
 <<set $map = setup.generateDirectionsMap(53.40264463190122, -2.9775098406789655,53.40445691350825, -2.983758768041164)>>
 <<include "headerstory">>
 <main class="story">
-<audio id="audio" autoplay>
+<audio id="audio">
   <source src="https://www.dropbox.com/s/vobz1rqr6u0pcbf/04.%20THE%20STREETS%20PART%20TWO%20V1.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 
-<div id="map" class="hide">$map</div>
-<div class="poster-wrapper">
+<div id="map">$map</div>
+<div class="poster-wrapper hide" id="poster">
    <img class="poster" src="./../assets/img/moon.jpeg"/>
- </div>
+</div>
 <div id="caption" ></div>
 <div id="transcript"></div>
 <div id="mount" ></div>
@@ -946,10 +949,10 @@ But despite how war has marked our cities, our greatest treasure, our people, pe
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
 <div id="mount"></div>
-<h2>Liverpool Philharmonic</h2>
+<h2>The BlueCoat</h2>
 <p>Would you like to go on another journey?</p>
 <br/>
- <h3>Spirits from Concrete & Iron</h3>
+ <h3>Our Own Personal Heroes</h3>
  <br/>
     <a href="https://fr-spirits-concrete-iron.netlify.app/">
 <button>Start</button></a>
