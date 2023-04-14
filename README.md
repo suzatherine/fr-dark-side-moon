@@ -2,9 +2,8 @@
 
 Still needs captions
 
-
-Audio in second walk needs to be playing by default?
-
 need to change the link at the end
+
+need to add lofi AR images
 
 https://dark-side-moon.netlify.app/

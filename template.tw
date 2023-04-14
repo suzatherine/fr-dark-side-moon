@@ -883,15 +883,27 @@ Now there are the parades of an alien country
 </div>
 <div id="caption" ></div>
 <div id="transcript"></div>
-<div id="mount" ></div>
+<div id="mount"  ><p class="comment"> To listen press <div class="inline-btn-wrapper">
+<<link "play">>
+        <<if $playToggle is false>>
+      <<set $fn to setup.play()>>
+      <<set $playToggle to true>>
+      <<addclass "#playpause" "playhighlight">>
+      <<else>>
+       <<set $fn to setup.pause()>>
+        <<set $playToggle to false>>
+      <<removeclass "#playpause" "playhighlight">>
+      <</if>>
+      <</link>></div></p></div>
 
-<<timed 6s>>
-  <<addclass "#forIcon" "circle">>
-   <<addclass "#forIcon" "pulse">>
-/* <<replace "#mount">>
-<p class="comment"> When you're finished listening, let me know</p>
-<<button "I'm finished">><<goto $nextpass>><</button>>
- <</replace>> */
+
+<<timed 15s>>
+  /* <<addclass "#forIcon" "circle">>
+   <<addclass "#forIcon" "pulse">> */
+<<replace "#mount">>
+<p class="comment"> When you're finished listening, let me know <div class="inline-btn-wrapper"><<button "I'm finished">><<goto $nextpass>><</button>></div></p>
+
+ <</replace>>
  <</timed>>
 </main>
 
@@ -914,6 +926,7 @@ Passersby light up the pavements like fireflies.
 Total darkness in the city is dangerous. Hiding many obstacles and the unknown.
 But darkness also provokes a lot of light, and if you look above you, the stars are like big plums. 
 As months pass, each person becomes use to their new role and the teachers start lessons again, reminding their students…
+
 TEACHER: 
 When you hear popping sounds, don’t be afraid, these are not rockets. That is our air defence shooting down missiles. 
 When you hear firework sounds, these are rockets, move away from the windows and hide behind the walls. 
@@ -922,6 +935,7 @@ If the wound is deep, apply the pressure above the wound, write down the time of
 If you have a panic attack, don’t breathe deeply. Breathe in the package. Or hold your breath. 4 times 4. Wrap yourself in a blanket. Hug yourself tightly. Solve a maths problem. Don’t forget about your exams.
 Life is priceless. The war will end.
 Eat sweets to replenish calories.
+
 NARRATOR:
 By the middle of Spring, Lilacs start to blossom, and it’s impossible in the darkness to understand, if you are looking at an outpost covered with white netting or Lilac bushes blooming. If it is something beautiful or something connected to war. You can only tell if you smell it.
 Even though war is still ongoing, sandbags split as grass and flowers begin to grow out of them.
