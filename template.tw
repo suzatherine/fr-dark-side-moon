@@ -658,7 +658,7 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateViewMap({originLat: 53.40269569930167,originLong: -2.9774866390022483, originName: "News From Nowhere Radical Community Bookshop"})>>
 <div id="audio"></div>
 <<include "header">>
 <div class="comp-warning">Best to experience on a phone</div>
@@ -821,7 +821,7 @@ Now there are the parades of an alien country
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateViewMap({originLat: 53.404164187603016,originLong: -2.9770049091044792, originName: "News From Nowhere Radical Community Bookshop"})>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -856,7 +856,8 @@ Now there are the parades of an alien country
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40122672594675, -2.969617415416523,53.40188587934155, -2.97516167308871)>>
+<<set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: "News From Nowhere Radical Community Bookshop"},"The Bluecoat")
+>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -885,7 +886,8 @@ Now there are the parades of an alien country
 <<set $showCaptionsIcon to true>>
 <<set $transcriptname to  "streets2transcript">>
 /* Everyman to 1931  */
-<<set $map = setup.generateDirectionsMap({originName: "Liverpool Everyman", originLat: 53.40294244809804, originLong:-2.9694980926454186}, "Liverpool Philharmonic")>>
+<<set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: "News From Nowhere Radical Community Bookshop"},"The Bluecoat")
+>>
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
 <audio id="audio" >
@@ -978,7 +980,7 @@ But despite how war has marked our cities, our greatest treasure, our people, pe
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
 /* Church  */
-<<set $map = setup.generateDirectionsMap(53.40143323565547, -2.9706816152244295, 53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateViewMap({originLat: 53.404357684743694,originLong: -2.983900550927597, originName: "The Bluecoat"})>>
 <main class="end">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
