@@ -1,9 +1,6 @@
-#The Dark Side of the Moon
+#Our Biggest Premiere Yet
 
-Still needs captions
+https://fr-biggest-premiere-yet.netlify.app/
 
-need to change the link at the end
-
-need to add lofi AR images
-
-https://dark-side-moon.netlify.app/
+add captions
+fix maps
