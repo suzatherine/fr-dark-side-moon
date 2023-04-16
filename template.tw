@@ -994,6 +994,7 @@ But despite how war has marked our cities, our greatest treasure, our people, pe
 <<set $showBackwards to true>>
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>>
 /* Church  */
 <<set $map = setup.generateViewMap({originLat: 53.404357684743694,originLong: -2.983900550927597, originName: "The Bluecoat"})>>
 <main class="end">
