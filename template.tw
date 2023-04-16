@@ -233,7 +233,14 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-<<cacheaudio "premiere" "https://remote.co.com/MoTT/AgentTraining/Sounds/13.%20Challenge%203%20-%202.mp3">>
+<<cacheaudio "20" "./assets/audio/20.mp3">>
+<<cacheaudio "21" "./assets/audio/21.mp3">>
+<<cacheaudio "22" "./assets/audio/22.mp3">>
+<<cacheaudio "23" "./assets/audio/23.mp3">>
+<<cacheaudio "24" "./assets/audio/24.mp3">>
+<<cacheaudio "25" "./assets/audio/25.mp3">>
+<<cacheaudio "26" "./assets/audio/26.mp3">>
+<<cacheaudio "26.5" "./assets/audio/26.5.mp3">>
 <<waitforaudio>>
 
 
@@ -659,6 +666,7 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateViewMap({originLat: 53.40269569930167,originLong: -2.9774866390022483, originName: "News From Nowhere Radical Community Bookshop"})>>
+<<audio ":all" stop>><<audio "20" play>>
 <div id="audio"></div>
 <<include "header">>
 <div class="comp-warning">Best to experience on a phone</div>
@@ -689,6 +697,7 @@ setup.backThirty = () => {
 <main class="instructions">
 <div id="map" class="hide">$map</div>
   <<if $openOrClosed is "open">>
+  <<audio ":all" stop>><<audio "21" play>>
   <p>Go inside and make yourself comfortable amongst the books 
  </p>
   <p>Don’t be shy to sit on the carpet </p>
@@ -697,6 +706,7 @@ setup.backThirty = () => {
 
 
   <<if $openOrClosed is "closed">>
+  <<audio ":all" stop>><<audio "24" play>>
   <p>Find a comfortable place to take shelter</p>
   <p>Maybe lean against one of the bookshop columns</p>
     <<button "I'm ready">><<goto $nextpass>><</button>>
@@ -716,6 +726,7 @@ setup.backThirty = () => {
 <<set $showCaptionsIcon to true>>
 <<set $showMap to false>>
 <<set $transcriptname to  "moontranscript">>
+<<audio ":all" stop>><<audio "22" play>>
 <<include "headerstory">>
 <main class="story" id="storyContainer">
 <audio id="audio" >
@@ -827,14 +838,16 @@ Now there are the parades of an alien country
 <main class="instructions">
 <div id="map" class="hide">$map</div>
 <<if $openOrClosed is "open">>
+<<audio ":all" stop>><<audio "23" play>>
   <p>Before you leave, take a chance to browse the many activist books from around the world. </p>
   <p>Can you find the section on Ukraine?</p>
   <<button "Next">><<goto $nextpass>><</button>>
 <</if>>
 
 <<if $openOrClosed is "closed">>
+<<audio ":all" stop>><<audio "25" play>>
 <p>Don’t forget to come back to News From Nowhere when it’s open</p>
-<p>You can browse the many activist books from around the world, including Ukraine</p>
+<p>You can browse the many activist books from around the world, including from Ukraine</p>
 
   <<button "Next">><<goto $nextpass>><</button>>
 <</if>>
@@ -858,6 +871,7 @@ Now there are the parades of an alien country
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: "News From Nowhere Radical Community Bookshop"},"The Bluecoat")
 >>
+<<audio ":all" stop>><<audio "26" play>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -885,6 +899,7 @@ Now there are the parades of an alien country
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to true>>
 <<set $transcriptname to  "streets2transcript">>
+<<audio ":all" stop>><<audio "26.5" play>>
 /* Everyman to 1931  */
 <<set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: "News From Nowhere Radical Community Bookshop"},"The Bluecoat")
 >>
@@ -905,7 +920,7 @@ Now there are the parades of an alien country
 
 <<timed 1s>>
   <<replace "#mount">>  
-<p class="comment">You can use the map <<link [img[assets/img/map.png]]>><</link>> to help you get there</p>
+<p class="comment">The map <<link [img[assets/img/map.png]]>><</link>> will help guide you</p>
 <</replace>>
  <</timed>>
 

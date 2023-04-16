@@ -308,7 +308,14 @@ setup.backThirty = () => {
   const audio = document.getElementById("audio");
   const timeHolder = audio.currentTime;
   audio.currentTime = timeHolder -30;
-  }</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;cacheaudio &quot;premiere&quot; &quot;https://remote.co.com/MoTT/AgentTraining/Sounds/13.%20Challenge%203%20-%202.mp3&quot;&gt;&gt;
+  }</script><tw-passagedata pid="1" name="StoryInit" tags="" position="100,100" size="100,100">&lt;&lt;cacheaudio &quot;20&quot; &quot;./assets/audio/20.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;21&quot; &quot;./assets/audio/21.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;22&quot; &quot;./assets/audio/22.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;23&quot; &quot;./assets/audio/23.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;24&quot; &quot;./assets/audio/24.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;25&quot; &quot;./assets/audio/25.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;26&quot; &quot;./assets/audio/26.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;26.5&quot; &quot;./assets/audio/26.5.mp3&quot;&gt;&gt;
 &lt;&lt;waitforaudio&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="header" tags="nobr" position="100,225" size="100,100">&lt;header&gt;
 &lt;div class=&quot;header-item&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;header-item&quot;&gt;
@@ -681,6 +688,7 @@ setup.backThirty = () => {
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
 &lt;&lt;set $map = setup.generateViewMap({originLat: 53.40269569930167,originLong: -2.9774866390022483, originName: &quot;News From Nowhere Radical Community Bookshop&quot;})&gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;20&quot; play&gt;&gt;
 &lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
 &lt;&lt;include &quot;header&quot;&gt;&gt;
 &lt;div class=&quot;comp-warning&quot;&gt;Best to experience on a phone&lt;/div&gt;
@@ -708,6 +716,7 @@ setup.backThirty = () => {
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
   &lt;&lt;if $openOrClosed is &quot;open&quot;&gt;&gt;
+  &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;21&quot; play&gt;&gt;
   &lt;p&gt;Go inside and make yourself comfortable amongst the books 
  &lt;/p&gt;
   &lt;p&gt;Don’t be shy to sit on the carpet &lt;/p&gt;
@@ -716,6 +725,7 @@ setup.backThirty = () => {
 
 
   &lt;&lt;if $openOrClosed is &quot;closed&quot;&gt;&gt;
+  &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;24&quot; play&gt;&gt;
   &lt;p&gt;Find a comfortable place to take shelter&lt;/p&gt;
   &lt;p&gt;Maybe lean against one of the bookshop columns&lt;/p&gt;
     &lt;&lt;button &quot;I&#39;m ready&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
@@ -731,6 +741,7 @@ setup.backThirty = () => {
 &lt;&lt;set $showCaptionsIcon to true&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
 &lt;&lt;set $transcriptname to  &quot;moontranscript&quot;&gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;22&quot; play&gt;&gt;
 &lt;&lt;include &quot;headerstory&quot;&gt;&gt;
 &lt;main class=&quot;story&quot; id=&quot;storyContainer&quot;&gt;
 &lt;audio id=&quot;audio&quot; &gt;
@@ -831,14 +842,16 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
 &lt;&lt;if $openOrClosed is &quot;open&quot;&gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;23&quot; play&gt;&gt;
   &lt;p&gt;Before you leave, take a chance to browse the many activist books from around the world. &lt;/p&gt;
   &lt;p&gt;Can you find the section on Ukraine?&lt;/p&gt;
   &lt;&lt;button &quot;Next&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $openOrClosed is &quot;closed&quot;&gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;25&quot; play&gt;&gt;
 &lt;p&gt;Don’t forget to come back to News From Nowhere when it’s open&lt;/p&gt;
-&lt;p&gt;You can browse the many activist books from around the world, including Ukraine&lt;/p&gt;
+&lt;p&gt;You can browse the many activist books from around the world, including from Ukraine&lt;/p&gt;
 
   &lt;&lt;button &quot;Next&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
@@ -856,6 +869,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
 &lt;&lt;set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: &quot;News From Nowhere Radical Community Bookshop&quot;},&quot;The Bluecoat&quot;)
 &gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;26&quot; play&gt;&gt;
 &lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
 
 &lt;main class=&quot;instructions&quot;&gt;
@@ -877,6 +891,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 &lt;&lt;set $showForwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to true&gt;&gt;
 &lt;&lt;set $transcriptname to  &quot;streets2transcript&quot;&gt;&gt;
+&lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;26.5&quot; play&gt;&gt;
 /* Everyman to 1931  */
 &lt;&lt;set $map = setup.generateDirectionsMap({originLat:53.40275655235202, originLong: -2.9775376742336603, originName: &quot;News From Nowhere Radical Community Bookshop&quot;},&quot;The Bluecoat&quot;)
 &gt;&gt;
@@ -897,7 +912,7 @@ Now there are the parades of an alien country</tw-passagedata><tw-passagedata pi
 
 &lt;&lt;timed 1s&gt;&gt;
   &lt;&lt;replace &quot;#mount&quot;&gt;&gt;  
-&lt;p class=&quot;comment&quot;&gt;You can use the map &lt;&lt;link [img[assets/img/map.png]]&gt;&gt;&lt;&lt;/link&gt;&gt; to help you get there&lt;/p&gt;
+&lt;p class=&quot;comment&quot;&gt;The map &lt;&lt;link [img[assets/img/map.png]]&gt;&gt;&lt;&lt;/link&gt;&gt; will help guide you&lt;/p&gt;
 &lt;&lt;/replace&gt;&gt;
  &lt;&lt;/timed&gt;&gt;
 
