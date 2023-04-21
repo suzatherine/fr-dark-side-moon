@@ -669,7 +669,7 @@ setup.backThirty = () => {
 <main class="beginning" id="">
 
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/moon.jpeg"/>
+   <img class="poster" src="./../assets/img/moon-title.jpeg"/>
  </div>
  <p class="comment center">Put your headphones in and turn up the volume</p>
  <div class="menu-wrapper">
