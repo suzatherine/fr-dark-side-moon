@@ -675,7 +675,7 @@ setup.backThirty = () => {
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
      <<button "I'm joining the audio tour here">><<goto "framing">><</button>>
-     <a href="www.withfireandrage.com"><button>Leave the Tour</button></a>
+     <a href="https://www.withfireandrage.com"><button>Leave the Tour</button></a>
 </div>
 </main>
 
@@ -691,7 +691,9 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $showMap to false>>
-
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp1.mp3">
+</audio>
 <main class="instructions" id="">
 <div id="mount"></div>
 <<timed 0.1s>><<replace "#mount">>
@@ -731,10 +733,10 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
-
 <<set $map = setup.generateViewMap({originLat: 53.402939134543324,originLong:-2.969497397902565, originName: "News From Nowhere Radical Community Bookshop"})>>
-
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp2.mp3">
+</audio>
 
 <div id="audio"></div>
 /* <<include "header">> */
@@ -789,8 +791,9 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
-<div id="audio"></div>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp3.mp3">
+</audio>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -853,8 +856,9 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
-<div id="audio"></div>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp4.mp3">
+</audio>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -1038,49 +1042,85 @@ setup.backThirty = () => {
 
 :: moontranscript
 
-<h2>Transcript</h2>
+<h2>THE DARK SIDE OF THE MOON</h2>
 
-NARRATOR:
+NARRATION BY VERONIKA SKLIAROVA:
+
 I had just had my first baby when the Maidan - the Revolution of Dignity began in 2014. There were months of very high emotional protests, the whole society mobilised. 
+
 The government had started to change the orientation of our politics, from European values back to that of the Russian Union. 
-Hundreds of thousands on the streets protested loudly that we do not want this Russian jail in our country. 
+
 Ukraine was one of the first-ever countries to draft a constitution over 300 hundred years ago… So we have these roots.
+
 We were fighting for more than just to be a European country, it was time to claim our identity, our subjectivity.
+
 I was there in winter with -12, -20 with my pram, and a very huge Pro-Ukrainian spirit.
+
 The government responded with cruelty. Many were beaten… a lot of blood. More than 100 people were killed. They paid the price for our freedom, and the price for our dignity. 
+
 Then the Russian invasions began in the regions of Donetsk, Luhansk and Crimea. And mothers like Lutfie Zudieva found strength to resist…
 
 
-LUTFIE ZUDIEVA:
+TESTIMONY OF LUTFIE ZUDIEVA:
+
 Crimean Tartars have a long history of repression. 
+
 And the great story of my family is connected with the question of fear and exile.
+
 I was born in Uzbekistan because my grandparents were deported in 1944 and my great great grandparents also lived in exile during the Russian Empire. 
+
 Now my generation is facing the same thing.
 In 2014 I was in my ninth month of pregnancy, waiting for my fourth child to be born.
+
 I have never in my life seen so many units of military machinery. Tanks, vehicles, aeroplanes flying above our heads. So many people with military uniforms. 
-I was already in the hospital and from my window, I could see men trying to enter. The chief physician stepped out in front of the soldiers, saying: ‘there are ladies here, and they're about to give birth. If anything happens to them, you will regret it.’ 
+
+I was already in the hospital and from my window, I could see men trying to enter. 
+
+The chief physician stepped out in front of the soldiers, saying: ‘there are ladies here, and they're about to give birth. If anything happens to them, you will regret it.’ 
+
 This was a man without any weapons, and he was standing up for us. I was terrified.
+
 Everyone was expecting that the global community would react. That sanctions would be introduced, and declarations would be made. But nothing happened, and the Russian soldiers remained in Crimea.
+
 When I gave birth, the nurse said to me, ‘Your three oldest children will be citizens of Ukraine, and your youngest child a citizen of the Russian Federation.’ 
+
 It was just a sentence, spoken by a regular woman, but it struck me. I realised that something had happened in front of my eyes.
+
 Russia introduced laws in Crimea that allowed them to begin the repression machine and the mass arrests started.
+
 A very good friend of mine told me about the search in her house. How at 5 am they were woken up by the sound of windows smashing and glass falling on the children… uniformed men entering with machine guns… I can still remember how many emotions were in her voice…the fear and hysteria. 
+
 That’s when I realised that this horrific situation was already knocking at the doors of people I know and I decided to do something about it.
+
 The first thing that crossed my mind was that I could write about the events happening and human rights abuses. To be the voice of my people, saying that we are not terrorists. That there are people in detention centres teachers, doctors, entrepreneurs, artists and they have one thing in common, they did no harm.
+
 I wanted to tell the truth. It was the call of my heart. My voluntary decision.
+
 This is how the phenomenon of writers like me emerged. Civic journalists taking responsibility to speak about the dark side of the moon.
+
 Ramadan had started when I was arrested. I was carrying bags with food, when two cars stopped next to me. Unknown men with balaclavas ran out and surrounded me. 
+
 They took me to a police department two hours away. 
+
 For seven hours I was surrounded by these men. I remained silent because I didn't trust them and I knew for sure they were torturing journalists. 
+
 The next day there was a court hearing. They decided I was guilty and I had to pay a small sum of 2000 rubles.
+
 I was not surprised at all. 
+
 It’s a way to show activists that law enforcement is watching you and what will follow is a criminal case and prison. It is a signal for you to decide if you want to go on or stop and leave the peninsula. 
-They wanted to make me scared, make me start living as a regular woman and “look after the household".
-But it was exactly the other way around. Surviving this meant I overcame my fear. 
+
+They wanted to make me scared, but it was exactly the other way around. 
+
+Surviving this meant I overcame my fear. 
+
 I became strong enough to stay in Crimea and go on writing. 
+
 The past reflected on my present and that gave me the strength to fight.
 
-ALIYE KENZHALIEVA:
+
+POEM BY ALIYE KENZHALIEVA:
+
 They teach [people] to love war
 To not remember tragedy
 To not pray for the souls of the unfortunates
@@ -1090,7 +1130,9 @@ To be happy that it took place
 To wear a military uniform
 To be proud in song and dance 
 To organize a holiday...
+
 [...]
+
 Here my great-grandfather lived, his gardens were here,
 Now there are the parades of an alien country
 
@@ -1206,33 +1248,55 @@ Now there are the parades of an alien country
 
 :: streets2transcript
 
-<h2>Transcript</h2>
+<h2>THE STREETS PART TWO</h2>
 
-NARRATOR:
+NARRATION BY VERONIKA SKLIAROVA:
+
 Russians target our infrastructure creating disasters.
+
 Imagine the street you are walking on now, without any electricity?
+
 Food in supermarkets or restaurants rots quickly without refrigeration. And for days there are no lights at home, in shop windows, from street lamps.
+
 You learn to keep your phone charged, and always carry a power bank and a torch.
+
 Passersby light up the pavements like fireflies.
+
 Total darkness in the city is dangerous. Hiding many obstacles and the unknown.
+
 But darkness also provokes a lot of light, and if you look above you, the stars are like big plums. 
+
 As months pass, each person becomes use to their new role and the teachers start lessons again, reminding their students…
 
-TEACHER: 
+
+VOICE OF THE TEACHER: 
+
 When you hear popping sounds, don’t be afraid, these are not rockets. That is our air defence shooting down missiles. 
+
 When you hear firework sounds, these are rockets, move away from the windows and hide behind the walls. 
+
 When you hear whistling sounds, that is a plane. The plane carries bombs. Lie on the floor and cover your head. Open your mouth to avoid contusion.
+
 If the wound is deep, apply the pressure above the wound, write down the time of application and try to find a doctor.
+
 If you have a panic attack, don’t breathe deeply. Breathe in the package. Or hold your breath. 4 times 4. Wrap yourself in a blanket. Hug yourself tightly. Solve a maths problem. Don’t forget about your exams.
+
 Life is priceless. The war will end.
+
 Eat sweets to replenish calories.
 
-NARRATOR:
+
+NARRATION BY VERONIKA SKLIAROVA:
+
 By the middle of Spring, Lilacs start to blossom, and it’s impossible in the darkness to understand, if you are looking at an outpost covered with white netting or Lilac bushes blooming. If it is something beautiful or something connected to war. You can only tell if you smell it.
+
 Even though war is still ongoing, sandbags split as grass and flowers begin to grow out of them.
+
 Everything becomes mixed, absurd things with awful things all in one story.
+
 But despite how war has marked our cities, our greatest treasure, our people, persist. And musicians like cellist Karachevtsev Denys, go out on the streets to play amongst the rubble of the buildings...
 
+(Celloist Denys Karachevtsev plays classical music on the streets in Kharkiv)
 
 
 
