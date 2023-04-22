@@ -15,8 +15,8 @@ The Dark Side of the Moon
 :: Story Stylesheet [stylesheet]
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap");
 
-@import url("./styles/generics.css");
-@import url("./styles/styles.css");
+@import url("styles/generics.css");
+@import url("styles/styles.css");
 
 
 
@@ -209,14 +209,14 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-<<cacheaudio "20" "./assets/audio/20.mp3">>
-<<cacheaudio "21" "./assets/audio/21.mp3">>
-<<cacheaudio "22" "./assets/audio/22V2.mp3">>
-<<cacheaudio "23" "./assets/audio/23.mp3">>
-<<cacheaudio "24" "./assets/audio/24.mp3">>
-<<cacheaudio "25" "./assets/audio/25.mp3">>
-<<cacheaudio "26" "./assets/audio/26.mp3">>
-<<cacheaudio "26.5" "./assets/audio/26.5v2.mp3">>
+<<cacheaudio "20" "assets/audio/20.mp3">>
+<<cacheaudio "21" "assets/audio/21.mp3">>
+<<cacheaudio "22" "assets/audio/22V2.mp3">>
+<<cacheaudio "23" "assets/audio/23.mp3">>
+<<cacheaudio "24" "assets/audio/24.mp3">>
+<<cacheaudio "25" "assets/audio/25.mp3">>
+<<cacheaudio "26" "assets/audio/26.mp3">>
+<<cacheaudio "26.5" "assets/audio/26.5v2.mp3">>
 <<waitforaudio>>
 
 
@@ -304,7 +304,7 @@ setup.backThirty = () => {
   <<if $sendOn is true>>
  <div class="nav-wrapper" id="forIcon">
     <div class="nav-item " >
-        <a href="https://fr-our-own-personal-heroes.netlify.app/">
+        <a href="https://withfireandrageliverpool.com/heroes">
 <img src="assets/img/for.png"></a>
     </div>
   </div>
@@ -669,15 +669,44 @@ setup.backThirty = () => {
 <main class="beginning" id="">
 
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/moon-title.jpeg"/>
+   <img class="poster" src="assets/img/moon-title.jpeg"/>
  </div>
  <p class="comment center">Put your headphones in and turn up the volume</p>
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
      <<button "I'm joining the audio tour here">><<goto "framing">><</button>>
-     <a href="https://www.withfireandrage.com"><button>Leave the Tour</button></a>
+    <<button "Leave">><<goto "leave">><</button>>
 </div>
 </main>
+
+:: leave [nobr]
+<<set $prevpass to "beginning">>
+<<set $passage to "leave">>
+<<set $nextpass to "leave">>
+<<set $transcript to false>>
+<<set $playToggle to false>>
+<<set $captionToggle to false>>
+<<set $showForwards to false>>
+<<set $showBackwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $showMap to false>>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/CreditsAltV1.mp3">
+</audio>
+<main class="instructions" id="">
+<div id="mount"></div>
+<p>Thank you for joining me today</p>
+
+<p>With Fire And Rage is created from the testimonies, art, photography, and music of artists across Ukraine </p>
+<p>I invite you to discover their work </p>
+<p>Listen to more online</p>
+<p>Or visit other locations another day</p>
+
+<a href="https://www.withfireandrage.com"  rel="noreferrer" style="color:var(--color-yellow) "><p>withfireandrage.com</p></a>
+
+</main>
+<<include "footer">>
+
 
 
 :: framing [nobr]  {"position":"700,175","size":"100,100"}
@@ -1007,7 +1036,7 @@ setup.backThirty = () => {
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/moon.jpeg"/>
+   <img class="poster" src="assets/img/moon.jpeg"/>
  </div>
   
 <div id="caption" class="hide"></div>
@@ -1214,7 +1243,7 @@ Now there are the parades of an alien country
   <<timed 4s>>
       <<replace "#headerinstmount">>
     <p class="comment"> Are you outside Bluecoat on School Lane? 
-    <a href="https://fr-our-own-personal-heroes.netlify.app/">
+    <a href="https://withfireandrageliverpool.com/heroes">
 <button>I'm here</button></a>
     </p>
     <</replace>>
@@ -1232,7 +1261,7 @@ Now there are the parades of an alien country
 
   <<timed 30s>>
 <<replace "#headerinstmount">>
-    <p class="comment"> Are you outside Bluecoat on School Lane?<a href="https://fr-our-own-personal-heroes.netlify.app/">
+    <p class="comment"> Are you outside Bluecoat on School Lane?<a href="https://withfireandrageliverpool.com/heroes">
 <button>I'm here</button></a>
     </p>
     <</replace>>
