@@ -1237,7 +1237,7 @@ Now there are the parades of an alien country
   <<replace "#headerinstmount">>  
 <p class="comment">As you begin to walk press  <div class="inline-btn-wrapper">
 <<link "play">>
-  <<timed 4s>>
+  <<timed 15s>>
       <<replace "#headerinstmount">>
     <p class="comment"> Are you outside Bluecoat on School Lane? 
     <a href="https://withfireandrageliverpool.com/heroes">
