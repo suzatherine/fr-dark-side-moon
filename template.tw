@@ -42,7 +42,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&zoom=17&origin=${originPlaceId}&destination=${destination}&mode=walking`)
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&zoom=17&origin=${originName}&destination=${destination}${waypointsString}&mode=walking`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -55,7 +55,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/directions?key=AIzaSyCSbMwR1cUMfnIAh0Pxi0F1N16kvDGZXGU&center=${origin[0]},${origin[1]}&zoom=18&origin=${origin[0]},${origin[1]}&destination=${dest[0]},${dest[1]}&waypoints=${wayp}&mode=walking`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -74,7 +74,7 @@ iFrame.setAttribute("referrerpolicy", "no-referrer-when-downgrade")
 // iFrame.setAttribute("allowfullscreen")
 iFrame.setAttribute("src", `https://www.google.com/maps/embed/v1/place?key=AIzaSyB7uJuBjDcK-tb0aJpTjaKA1ZNLWhEPN5M&center=${originLat},${originLong}&q=${originName}&zoom=17`)
 const mount = document.getElementById("mapMount")
-console.log(iFrame)
+// console.log(iFrame)
 return iFrame
 // this.mapMount.appendChild(iFrame)
 }
@@ -217,6 +217,7 @@ setup.backThirty = () => {
 <<cacheaudio "25" "assets/audio/25.mp3">>
 <<cacheaudio "26" "assets/audio/26.mp3">>
 <<cacheaudio "26.5" "assets/audio/26.5v2.mp3">>
+<<cacheaudio "PD8V2" "assets/audio/PD8V2.mp3">>
 <<waitforaudio>>
 
 
@@ -284,6 +285,22 @@ setup.backThirty = () => {
     <p class="comment">Press the photo <br> to see it transform</p>
     </div>
     </div>
+    
+</header>
+
+:: headerEm [nobr]{"position":"100,225","size":"100,100"}
+
+<header class="ar" >
+ <div class="nav-wrapper">
+    <div class="nav-item">
+  <h2>$ARtitle</h2>
+ </div>
+ </div>
+ /* <div class="nav-wrapper">
+    <div class="nav-item">
+
+    </div>
+    </div> */ 
     
 </header>
 
@@ -1016,7 +1033,12 @@ setup.backThirty = () => {
 :: moon [nobr]  {"position":"700,175","size":"100,100"}
 <<set $prevpass to "instnar2">>
 <<set $passage to "moon">>
+  <<if $openOrClosed is "open">>
+<<set $nextpass to "embroid1">>
+<</if>>
+  <<if $openOrClosed is "closed">>
 <<set $nextpass to "instnar5">>
+<</if>>
 <<set $transcript to false>>
 <<set $playToggle to false>>
 <<set $captionToggle to false>>
@@ -1063,6 +1085,83 @@ setup.backThirty = () => {
 </main>
 <<include "footerstory">>
 
+
+:: embroid1 [nobr]
+<<set $prevpass to "moon">>
+<<set $passage to "embroid1">>
+<<set $nextpass to "embroid2">>
+<<set $showMap to false>>
+<<set $showAudio to false>>
+<<set $showReplay to true>>
+<<set $showBackwards to true>>
+<<set $showForwards to true>>
+<<set $showCaptionsIcon to false>>
+
+<<audio ":all" stop>><<audio "PD8V2" play>>
+<div id="audio"></div>
+
+<main class="instructions">
+
+<p>Can you spot the black and white embroidered art?</p>
+
+<p>It’s hanging up inside the bookshop</p>
+
+
+ <div class="caution" ><img src="assets/img/caution.png"><p>If you go outside you can see it through the window
+</p></div>
+<br/>
+  <<button "Yes">><<goto $nextpass>><</button>>
+</main>
+<<include "footer">>
+
+
+
+:: embroid2 [nobr]{"position":"450,50","size":"100,100"}
+<<set $prevpass to "embroid1">>
+<<set $passage to "embroid2">>
+<<set $nextpass to "instnar5">>
+<<set $showMap to false>>
+<<set $showAudio to false>>
+<<set $showReplay to true>>
+<<set $showBackwards to true>>
+<<set $showForwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $ARtitle to "Writer Vasyl Stus">>
+<<set $transcriptname to  "Emtranscript">>
+<<audio ":all" stop>>
+
+<<include "headerEm">>
+<audio id="audio" autoplay>
+  <source src="https://withfireandrageliverpool.com/audio/DM/PD11V1.mp3">
+
+</audio>
+<main class="ar">
+
+ <div class="ar-imgs-container one" id="ARContainer">
+  
+      <img src="assets/img/writer.jpeg" class="">
+
+  </div>
+  <div id="transcript"></div>
+</main>
+
+<<include "footerAR">>
+<<done>>
+<<addclass "#playpause" "playhighlight">>
+<</done>>
+
+
+:: Emtranscript
+<br>
+Vasyl Stus was a Ukrainian poet, writer and journalist. 
+
+His works were banned by the Soviet Union, and he was persecuted for speaking out against Russian repression.
+
+In the nineteen eighties Stus was given, 10 years in a labour camp for “anti-Soviet activity”. Five years later he died on hunger strike.
+
+Before his imprisonment, he renounced his Soviet citizenship, saying:
+
+“To be a Soviet citizen is to be a slave. The greater the abuse I endure, the greater my resistance to this system which abuses humanity”
 
 
 
